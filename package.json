@@ -1,0 +1,24 @@
+{
+  "name": "invitia-landing-page-tailwind",
+  "version": "1.0.0",
+  "description": "Berikut adalah html - tailwind untuk landing page dari Invitia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Refara08/invitia-landing-page-tailwindcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Refara08/invitia-landing-page-tailwindcss/issues"
+  },
+  "homepage": "https://github.com/Refara08/invitia-landing-page-tailwindcss#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
