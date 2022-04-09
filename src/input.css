@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 .hamburger-line {
-  @apply h-[2px] w-[18px] my-0.5 block bg-black;
+  @apply h-[2px] w-[18px] my-px block bg-black;
 }
 
 .btn {
@@ -15,7 +15,7 @@
 }
 
 .transition-300ms {
-  @apply transition duration-300 ease-linear;
+  @apply transition duration-200 ease-linear;
 }
 
 .hamburger-active > span {
