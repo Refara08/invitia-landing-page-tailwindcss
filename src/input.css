@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 .hamburger-line {
-  @apply h-[2px] w-[18px] my-px block bg-black;
+  @apply h-[2px] w-[18px] my-1 block bg-black;
 }
 
 .btn {
@@ -19,13 +19,13 @@
 }
 
 .hamburger-active > span {
-  @apply bg-white -my-px;
+  @apply bg-white -my-1;
 }
 
 .hamburger-active > span:nth-child(1) {
-  @apply rotate-45;
+  @apply rotate-45 translate-y-[10px];
 }
 
 .hamburger-active > span:nth-child(2) {
-  @apply -rotate-45;
+  @apply -rotate-45 translate-y-3;
 }

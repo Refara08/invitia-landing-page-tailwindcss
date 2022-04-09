@@ -1,6 +1,6 @@
 const burger = document.querySelector("#hamburger");
 const mobileMenu = document.querySelector("#menu");
-const nav = document.querySelector("nav");
+const nav = document.querySelector("#nav");
 const logoTextLeft = document.querySelector("#logo-text-left");
 const logoTextRight = document.querySelector("#logo-text-right");
 

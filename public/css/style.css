@@ -514,6 +514,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.top-0{
+  top: 0px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -551,12 +560,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-4{
+  height: 1rem;
+}
+
 .h-\[800px\]{
   height: 800px;
 }
 
+.h-\[1000px\]{
+  height: 1000px;
+}
+
 .w-full{
   width: 100%;
+}
+
+.max-w-min{
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 
 .basis-4\/12{
@@ -615,6 +638,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .bg-white{
@@ -680,12 +707,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-semibold{
   font-weight: 600;
 }
 
 .font-light{
   font-weight: 300;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .text-white{
@@ -702,10 +738,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0;
 }
 
-.opacity-100{
-  opacity: 1;
-}
-
 .transition{
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -715,8 +747,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .hamburger-line{
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   display: block;
   height: 2px;
   width: 18px;
@@ -744,18 +776,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .hamburger-active > span{
-  margin-top: -1px;
-  margin-bottom: -1px;
+  margin-top: -0.25rem;
+  margin-bottom: -0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hamburger-active > span:nth-child(1){
+  --tw-translate-y: 10px;
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hamburger-active > span:nth-child(2){
+  --tw-translate-y: 0.75rem;
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
