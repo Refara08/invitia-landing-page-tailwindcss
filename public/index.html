@@ -7,7 +7,56 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Invitia. | Premium wedding invitation is in your hand</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold">Welcome to Invitia.</h1>
+  <body class="font-poppins">
+    <!-- start of nav div -->
+    <nav class="relative transition-300ms bg-white z-10">
+      <!-- container of nav -->
+      <div class="flex items-center px-5 py-4">
+        <!-- logo left -->
+        <div class="basis-4/12">
+          <a
+            class="text-base text-white translate-x-10 font-semibold block transition-300ms"
+            id="logo-text-left"
+            >Invitia.</a
+          >
+        </div>
+        <!-- logo center -->
+        <div class="basis-4/12 flex justify-center">
+          <a
+            href="#"
+            class="text-base font-semibold block transition-300ms"
+            id="logo-text-right"
+            >Invitia.</a
+          >
+        </div>
+        <!-- hamburger -->
+        <div class="basis-4/12">
+          <div
+            class="flex flex-col items-end justify-start cursor-pointer z-40 transition-300ms py-3 pl-5"
+            id="hamburger"
+          >
+            <span class="hamburger-line transition-300ms"></span>
+            <span class="hamburger-line transition-300ms"></span>
+          </div>
+        </div>
+      </div>
+      <!-- mobile nav -->
+      <div
+        class="hidden bg-white text-white font-inter font-light p-8 pt-2 text-center absolute w-full transition-300ms opacity-0 -translate-y-1 z-10"
+        id="menu"
+      >
+        <ul class="pt-3">
+          <li class="mb-5"><a href="#">Fitur</a></li>
+          <li class="mb-5"><a href="#">Paket</a></li>
+          <li class="mb-5"><a href="#">Kontak</a></li>
+        </ul>
+        <a href="#" class="mt-12 btn text-black bg-white">Sign in as client</a>
+      </div>
+    </nav>
+    <!-- end of nav div -->
+
+    <!-- <div class="bg-gray-100 h-[800px] relative -z-10"></div> -->
+
+    <script src="app.js"></script>
   </body>
 </html>
