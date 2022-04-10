@@ -6,11 +6,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* html,
 body {
   width: 100%;
   overflow-x: hidden;
-}
+} */
 
 .hamburger-line {
   @apply h-[2px] w-[18px] sm:h-[3px] sm:w-[22px] my-1 block;

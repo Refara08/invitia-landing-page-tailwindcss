@@ -635,6 +635,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: min-content;
 }
 
+.max-w-full{
+  max-width: 100%;
+}
+
 .basis-4\/12{
   flex-basis: 33.333333%;
 }
@@ -720,6 +724,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-center{
   justify-content: center;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .border-2{
@@ -871,11 +883,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-html,
+/* html,
 body {
   width: 100%;
   overflow-x: hidden;
-}
+} */
 
 .hamburger-line{
   margin-top: 0.25rem;
