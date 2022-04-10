@@ -523,20 +523,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
-.z-10{
-  z-index: 10;
-}
-
 .z-40{
   z-index: 40;
 }
 
-.-z-10{
-  z-index: -10;
-}
-
 .z-20{
   z-index: 20;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .my-2{
@@ -876,7 +872,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -955,12 +950,6 @@ body {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:shadow-inner:hover{
-  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 640px){
@@ -1053,12 +1042,6 @@ body {
     flex-basis: 0px;
   }
 
-  .md\:scale-\[1\.4\]{
-    --tw-scale-x: 1.4;
-    --tw-scale-y: 1.4;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .md\:scale-\[1\.5\]{
     --tw-scale-x: 1.5;
     --tw-scale-y: 1.5;
@@ -1099,19 +1082,8 @@ body {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:-translate-y-1{
-    --tw-translate-y: -0.25rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .lg\:translate-x-\[20\%\]{
     --tw-translate-x: 20%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:scale-\[1\.3\]{
-    --tw-scale-x: 1.3;
-    --tw-scale-y: 1.3;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1127,16 +1099,12 @@ body {
     margin-top: -6rem;
   }
 
-  .xl\:mt-10{
-    margin-top: 2.5rem;
+  .xl\:mt-5{
+    margin-top: 1.25rem;
   }
 
   .xl\:ml-5{
     margin-left: 1.25rem;
-  }
-
-  .xl\:mt-5{
-    margin-top: 1.25rem;
   }
 
   .xl\:-translate-y-16{
@@ -1149,26 +1117,10 @@ body {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .xl\:scale-\[1\.3\]{
-    --tw-scale-x: 1.3;
-    --tw-scale-y: 1.3;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .xl\:scale-\[1\.2\]{
     --tw-scale-x: 1.2;
     --tw-scale-y: 1.2;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:py-24{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .xl\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .xl\:text-\[250px\]{
@@ -1177,11 +1129,6 @@ body {
 
   .xl\:text-\[120px\]{
     font-size: 120px;
-  }
-
-  .xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .xl\:text-3xl{
