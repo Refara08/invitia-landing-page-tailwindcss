@@ -668,10 +668,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
-.overflow-x-hidden{
-  overflow-x: hidden;
-}
-
 .border-2{
   border-width: 2px;
 }
@@ -813,6 +809,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .hamburger-line{
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -862,6 +864,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .saly {
-  margin-top: calc(-80% + 5vw);
+  margin-top: calc(-80% + 20vw);
   transform: translateX(43%);
 }

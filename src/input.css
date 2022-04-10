@@ -6,6 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .hamburger-line {
   @apply h-[2px] w-[18px] my-1 block bg-black;
 }
@@ -31,6 +37,6 @@
 }
 
 .saly {
-  margin-top: calc(-80% + 5vw);
+  margin-top: calc(-80% + 20vw);
   transform: translateX(43%);
 }
