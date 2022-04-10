@@ -6,14 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
 body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
 .hamburger-line {
-  @apply h-[2px] w-[18px] my-1 block bg-black;
+  @apply h-[2px] w-[18px] my-1 block;
 }
 
 .btn {

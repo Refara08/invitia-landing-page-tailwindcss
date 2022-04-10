@@ -566,20 +566,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.75rem;
 }
 
-.-mr-8{
-  margin-right: -2rem;
-}
-
 .-mr-10{
   margin-right: -2.5rem;
-}
-
-.-mr-\[6px\]{
-  margin-right: -6px;
-}
-
-.-mr-\[50px\]{
-  margin-right: -50px;
 }
 
 .-mr-\[60px\]{
@@ -618,8 +606,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-\[2px\]{
-  width: 2px;
+.w-\[1px\]{
+  width: 1px;
 }
 
 .min-w-min{
@@ -861,7 +849,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-html,
 body {
   max-width: 100%;
   overflow-x: hidden;
@@ -873,8 +860,6 @@ body {
   display: block;
   height: 2px;
   width: 18px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .btn{
