@@ -871,6 +871,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+html,
 body {
   width: 100%;
   overflow-x: hidden;
