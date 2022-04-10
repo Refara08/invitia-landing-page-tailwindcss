@@ -553,6 +553,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3rem;
 }
 
+.-mt-16{
+  margin-top: -4rem;
+}
+
+.ml-3{
+  margin-left: 0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -571,6 +579,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[1000px\]{
   height: 1000px;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .w-full{
@@ -617,6 +629,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-rotate-\[5deg\]{
+  --tw-rotate: -5deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-110{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -641,6 +664,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
+.overflow-x-auto{
+  overflow-x: auto;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden{
+  overflow-y: hidden;
+}
+
 .border-2{
   border-width: 2px;
 }
@@ -660,9 +699,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100{
+.bg-red-300{
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .p-8{
@@ -718,6 +757,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
+.text-\[150px\]{
+  font-size: 150px;
+}
+
+.text-\[64px\]{
+  font-size: 64px;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -731,8 +778,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 300;
 }
 
+.font-extrabold{
+  font-weight: 800;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.leading-none{
+  line-height: 1;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
 }
 
 .text-white{
@@ -743,6 +802,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-bg-h{
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -769,12 +833,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .btn{
   display: inline-block;
-  width: 100%;
   cursor: pointer;
   border-radius: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-weight: 600;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .transition-300ms{
@@ -795,12 +859,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hamburger-active > span:nth-child(1){
   --tw-translate-y: 10px;
-  --tw-rotate: 45deg;
+  --tw-rotate: 135deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hamburger-active > span:nth-child(2){
   --tw-translate-y: 0.75rem;
-  --tw-rotate: -45deg;
+  --tw-rotate: -135deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.saly {
+  margin-top: calc(-60% + 5vw);
+  transform: translateX(45%);
 }

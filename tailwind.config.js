@@ -6,6 +6,9 @@ module.exports = {
         poppins: ["Poppins"],
         inter: ["Inter"],
       },
+      colors: {
+        "bg-h": "#EEEEEE",
+      },
     },
   },
   plugins: [],

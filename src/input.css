@@ -11,7 +11,7 @@
 }
 
 .btn {
-  @apply inline-block py-2 w-full font-semibold rounded-lg cursor-pointer;
+  @apply inline-block py-2 px-6 rounded-lg cursor-pointer;
 }
 
 .transition-300ms {
@@ -23,9 +23,14 @@
 }
 
 .hamburger-active > span:nth-child(1) {
-  @apply rotate-45 translate-y-[10px];
+  @apply rotate-[135deg] translate-y-[10px];
 }
 
 .hamburger-active > span:nth-child(2) {
-  @apply -rotate-45 translate-y-3;
+  @apply -rotate-[135deg] translate-y-3;
+}
+
+.saly {
+  margin-top: calc(-60% + 5vw);
+  transform: translateX(45%);
 }
