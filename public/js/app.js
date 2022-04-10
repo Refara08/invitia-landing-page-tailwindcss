@@ -21,6 +21,14 @@ const navBlack = () => {
   logoTextRight.classList.remove("-translate-x-0");
   logoTextLeft.classList.add("translate-x-0");
   logoTextRight.classList.add("-translate-x-10");
+
+  // transisi warna untuk logo dan nav desktop
+  if (window.innerWidth > 768) {
+    logoTextLeft.classList.remove("md:text-black");
+  }
+
+  //nav desktop
+  desktopMenu.classList.add("text-white");
 };
 
 const navWhite = () => {
@@ -37,6 +45,14 @@ const navWhite = () => {
   logoTextLeft.classList.add("translate-x-10");
   logoTextRight.classList.remove("-translate-x-10");
   logoTextRight.classList.add("-translate-x-0");
+
+  // transisi warna untuk logo desktop
+  if (window.innerWidth > 768) {
+    logoTextLeft.classList.add("md:text-black");
+  }
+
+  //nav desktop
+  desktopMenu.classList.remove("text-white");
 };
 
 const mobileActive = () => {
