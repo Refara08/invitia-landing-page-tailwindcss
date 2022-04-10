@@ -35,8 +35,3 @@ body {
 .hamburger-active > span:nth-child(2) {
   @apply -rotate-[135deg] translate-y-3;
 }
-
-.saly {
-  margin-top: calc(-80% + 20vw);
-  transform: translateX(43%);
-}
