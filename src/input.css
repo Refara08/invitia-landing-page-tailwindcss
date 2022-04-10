@@ -12,11 +12,11 @@ body {
 }
 
 .hamburger-line {
-  @apply h-[2px] w-[18px] my-1 block;
+  @apply h-[2px] w-[18px] sm:h-[3px] sm:w-[22px] my-1 block;
 }
 
 .btn {
-  @apply inline-block py-2 px-6 rounded-lg cursor-pointer;
+  @apply inline-block py-2 px-6 rounded-full cursor-pointer;
 }
 
 .transition-300ms {

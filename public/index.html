@@ -30,44 +30,62 @@
   </head>
   <body class="font-poppins">
     <!-- container of nav -->
-    <nav class="block sticky top-0 z-10">
+    <nav class="block sticky top-0 z-40">
       <!-- start of nav div -->
       <div class="relative bg-white" id="nav">
-        <div class="flex items-center px-5 py-4">
+        <div
+          class="md:container md:mx-auto flex items-center px-5 py-4 md:justify-between"
+        >
           <!-- logo left -->
-          <div class="basis-4/12">
+          <div class="basis-4/12 md:basis-0">
             <a
-              class="text-base my-2 text-white translate-x-10 font-semibold block transition-300ms"
+              class="text-base my-2 text-white md:text-black md:text-3xl translate-x-10 md:transform-none font-semibold block transition-300ms"
               id="logo-text-left"
               >Invitia.</a
             >
           </div>
           <!-- logo center -->
-          <div class="basis-4/12 flex justify-center">
+          <div class="md:hidden basis-4/12 flex justify-center">
             <a
               href="#"
-              class="text-base my-2 -translate-x-0 font-semibold block transition-300ms"
+              class="text-base sm:text-xl my-2 -translate-x-0 font-semibold block transition-300ms"
               id="logo-text-right"
               >Invitia.</a
             >
           </div>
           <!-- hamburger -->
           <div
-            class="basis-4/12 py-3 pl-5 flex flex-col items-end justify-start"
+            class="md:hidden basis-4/12 py-3 pl-5 flex flex-col items-end justify-start"
           >
             <div
               class="cursor-pointer z-40 h-4 transition-300ms max-w-min"
               id="hamburger"
             >
-              <span class="hamburger-line transition-300ms"></span>
-              <span class="hamburger-line transition-300ms"></span>
+              <span class="hamburger-line transition-300ms bg-black"></span>
+              <span class="hamburger-line transition-300ms bg-black"></span>
             </div>
           </div>
+          <!-- desktop menu -->
+          <div
+            class="hidden md:flex md:justify-between md:items-center"
+            id="menu-desktop"
+          >
+            <ul class="flex">
+              <li class="mx-5"><a href="#">Fitur</a></li>
+              <li class="mx-5"><a href="#">Paket</a></li>
+              <li class="mx-5"><a href="#">Kontak</a></li>
+            </ul>
+            <a
+              href="#"
+              class="btn text-black bg-white border-2 border-black ml-5 hover:bg-black hover:text-white hover:border-white transition-300ms"
+              >Sign in as client</a
+            >
+          </div>
         </div>
-        <!-- mobile nav -->
+        <!-- mobile menu -->
         <div
-          class="hidden bg-black text-white font-inter font-light p-8 pt-2 text-center absolute w-full transition-300ms -translate-y-5 z-10"
-          id="menu"
+          class="hidden bg-black text-white font-inter font-light p-8 pt-2 text-center absolute w-full transition-300ms -translate-y-5 z-40"
+          id="menu-mobile"
         >
           <ul class="pt-3">
             <li class="mb-5"><a href="#">Fitur</a></li>
@@ -84,39 +102,48 @@
 
     <!-- start of main -->
     <main class="container mx-auto px-4">
-      <section id="home">
+      <section id="home" class="xl:py-15">
         <div class="grid grid-cols-2">
           <!-- text hero -->
           <div class="">
             <div>
               <h1
-                class="text-bg-h font-extrabold text-[150px] leading-none tracking-wide"
+                class="text-bg-h font-extrabold text-[150px] xl:text-[250px] leading-none tracking-wide"
               >
                 Hello!
               </h1>
               <h2
-                class="text-black font-extrabold text-[64px] leading-none -mt-16 ml-3 min-w-min"
+                class="text-black font-extrabold text-[64px] xl:text-[120px] leading-none -mt-16 xl:-mt-24 ml-3 min-w-min"
               >
                 <span class="block">We are</span>
                 <span class="block">Invitia.</span>
               </h2>
             </div>
-            <div class="flex flex-col justify-center items-end">
-              <span class="w-[1px] h-[60px] block bg-black my-5 -mr-10"></span>
-              <p class="text-right mb-5 -mr-[60px]">
-                Premium wedding <span class="font-bold">invitation</span> is on
-                your hand
-              </p>
-              <a href="#" class="btn bg-black text-white mb-5 -mr-[60px]"
-                >Telusuri</a
+            <div
+              class="flex flex-col justify-center items-end sm:items-start pl-3"
+            >
+              <span
+                class="w-[1px] h-[60px] block bg-black my-5 -mr-10 sm:mr-0 sm:ml-5 md:hidden"
+              ></span>
+              <p
+                class="text-right sm:text-left md:text-lg mb-5 -mr-[60px] md:mt-10"
               >
+                Premium wedding <span class="font-bold">invitation</span> is on
+                your hand. Unlimited guests and modern design for a convensional
+                price
+              </p>
+              <a
+                href="#"
+                class="btn bg-black text-white mb-20 -mr-[60px] hover:scale-110 xl:text-3xl xl:mt-5 xl:ml-5 z-20"
+                >Explore
+              </a>
             </div>
           </div>
           <div class="flex place-items-center">
             <img
               src="img/saly.png"
               alt=""
-              class="-rotate-[5deg] -translate-y-[25%] translate-x-[35%] scale-[2]"
+              class="-rotate-[5deg] -translate-y-[25%] translate-x-[35%] scale-[2] sm:-translate-y-0 sm:scale-[1.8] md:scale-[1.5] lg:-translate-y-10 lg:scale-[1.2] lg:translate-x-[20%] xl:-translate-y-16 xl:translate-x-[20%] xl:scale-[1.2]"
             />
           </div>
         </div>

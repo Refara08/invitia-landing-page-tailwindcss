@@ -1,7 +1,8 @@
 // ### Variables ### =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=--=-=-=-=-=-=--=-=-=-=-=--=-=-=-=-=-=-=--
 const burger = document.querySelector("#hamburger");
 const burgerLineArr = burger.children;
-const mobileMenu = document.querySelector("#menu");
+const mobileMenu = document.querySelector("#menu-mobile");
+const desktopMenu = document.querySelector("#menu-desktop");
 const nav = document.querySelector("#nav");
 const logoTextLeft = document.querySelector("#logo-text-left");
 const logoTextRight = document.querySelector("#logo-text-right");
@@ -99,6 +100,7 @@ burger.addEventListener("click", () => {
 
 // 2 - nav scroll bg-color change // =============================================================
 document.addEventListener("scroll", () => {
+  // ## merubah warna bg nav ketika scroll ##
   if (window.scrollY > 100) {
     // console.log("hitam");
     navBlack();
@@ -114,5 +116,23 @@ document.addEventListener("scroll", () => {
       line.classList.remove("bg-white");
       line.classList.add("bg-black");
     });
+  }
+
+  // ## close mobile nav ketika scroll ##
+  if (!mobileMenu.classList.contains("hidden")) {
+    console.log("hubahubahuba");
+    setTimeout(() => {
+      mobileDeactive();
+    }, 25);
+
+    setTimeout(() => {
+      // burger menu animation
+      burger.classList.remove("hamburger-active");
+    }, 325);
+
+    setTimeout(() => {
+      // mobile menu display none
+      mobileMenu.classList.add("hidden");
+    }, 200);
   }
 });
