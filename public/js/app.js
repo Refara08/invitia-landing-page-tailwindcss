@@ -82,7 +82,8 @@ burger.addEventListener("click", () => {
       navBlack();
 
       // burger menu animation
-      burger.classList.add("hamburger-active");
+      burger.classList.remove("burger-deactive");
+      burger.classList.add("burger-active");
     }, 25);
 
     setTimeout(() => {
@@ -104,7 +105,8 @@ burger.addEventListener("click", () => {
       }
 
       // burger menu animation
-      burger.classList.remove("hamburger-active");
+      burger.classList.remove("burger-active");
+      burger.classList.add("burger-deactive");
     }, 325);
 
     setTimeout(() => {
@@ -143,7 +145,8 @@ document.addEventListener("scroll", () => {
 
     setTimeout(() => {
       // burger menu animation
-      burger.classList.remove("hamburger-active");
+      burger.classList.remove("burger-active");
+      burger.classList.add("burger-deactive");
     }, 325);
 
     setTimeout(() => {
