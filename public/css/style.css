@@ -1193,6 +1193,10 @@ body {
     margin-top: 2.5rem;
   }
 
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1205,8 +1209,8 @@ body {
     flex-basis: 0px;
   }
 
-  .md\:translate-x-\[18\%\]{
-    --tw-translate-x: 18%;
+  .md\:translate-x-\[10\%\]{
+    --tw-translate-x: 10%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1275,13 +1279,13 @@ body {
     margin-left: 1.25rem;
   }
 
-  .xl\:-translate-y-16{
-    --tw-translate-y: -4rem;
+  .xl\:-translate-y-14{
+    --tw-translate-y: -3.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .xl\:translate-x-\[20\%\]{
-    --tw-translate-x: 20%;
+  .xl\:translate-x-\[15\%\]{
+    --tw-translate-x: 15%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
