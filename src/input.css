@@ -122,14 +122,18 @@
 }
 
 .p-heading {
-  @apply text-lg xl:text-2xl xl:-mt-24 -mt-16 ml-2 w-1/2 leading-none;
+  @apply text-base xl:text-2xl xl:-mt-24 -mt-16 ml-2 w-1/2 leading-none;
 }
 
 /* Card carousel */
 
 .card {
-  @apply flex flex-col justify-center items-center bg-bg-h hover:bg-black md:h-[130px] lg:h-[150px] xl:h-[175px] p-4 lg:px-6 rounded-2xl relative overflow-hidden cursor-pointer transition-300ms;
+  @apply basis-1/6 flex flex-col justify-center items-center bg-bg-h hover:bg-black md:h-[130px] lg:h-[150px] xl:h-[175px] p-4 lg:px-6 rounded-2xl relative overflow-hidden cursor-pointer transition-300ms;
 }
+
+/*.card.spanned2 {
+  @apply basis-[64%];
+} */
 
 .card:hover .card-title {
   @apply text-white transition-300ms;

@@ -9,6 +9,10 @@ module.exports = {
       colors: {
         "bg-h": "#EEEEEE",
       },
+
+      screens: {
+        mobile: { max: "767px" },
+      },
     },
   },
   plugins: [],
