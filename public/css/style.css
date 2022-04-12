@@ -713,12 +713,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.flex-col{
-  flex-direction: column;
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.flex-wrap{
-  flex-wrap: wrap;
+.flex-col{
+  flex-direction: column;
 }
 
 .place-items-center{
@@ -1152,7 +1152,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .card{
   position: relative;
   display: flex;
-  flex-basis: 16.666667%;
   cursor: pointer;
   flex-direction: column;
   align-items: center;
@@ -1197,10 +1196,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 175px;
   }
 }
-
-/*.card.spanned2 {
-  @apply basis-[64%];
-} */
 
 .card:hover .card-title{
   --tw-text-opacity: 1;
@@ -1402,10 +1397,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
-  .md\:grid{
-    display: grid;
-  }
-
   .md\:hidden{
     display: none;
   }
@@ -1427,10 +1418,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:transform-none{
     transform: none;
-  }
-
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:items-center{
@@ -1520,27 +1507,5 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-}
-
-@media (max-width: 767px){
-  .mobile\:w-\[200vw\]{
-    width: 200vw;
-  }
-
-  .mobile\:w-\[200\%\]{
-    width: 200%;
-  }
-
-  .mobile\:overflow-x-auto{
-    overflow-x: auto;
-  }
-
-  .mobile\:overflow-y-hidden{
-    overflow-y: hidden;
-  }
-
-  .mobile\:whitespace-nowrap{
-    white-space: nowrap;
   }
 }
