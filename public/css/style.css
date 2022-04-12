@@ -1118,6 +1118,17 @@ body {
   .card{
     height: 150px;
   }
+
+  .card{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .card{
+    height: 200px;
+  }
 }
 
 .card-content{
@@ -1130,9 +1141,28 @@ body {
   }
 }
 
+@media (min-width: 1280px){
+  .card-content{
+    margin-top: 2rem;
+  }
+}
+
 .card-title{
   margin-bottom: 0.25rem;
   font-weight: 700;
+}
+
+@media (min-width: 1024px){
+  .card-title{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .card-title{
+    margin-bottom: 0.5rem;
+  }
 }
 
 .card-text{
@@ -1144,6 +1174,11 @@ body {
 @media (min-width: 1024px){
   .card-text{
     padding-right: 37%;
+  }
+
+  .card-text{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .card-text{
