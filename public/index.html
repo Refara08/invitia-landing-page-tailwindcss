@@ -77,7 +77,7 @@
             </ul>
             <a
               href="#"
-              class="btn text-black bg-white border-2 border-black ml-5 hover:bg-black hover:text-white hover:border-white transition-300ms"
+              class="btn bg-black text-white border-2 border-white ml-5 hover:bg-white hover:text-black hover:border-black transition-300ms"
               >Sign in as client</a
             >
           </div>
@@ -101,15 +101,15 @@
     <!-- end of nav div -->
 
     <!-- start of main -->
-    <main class="container-me md:mx-auto px-4 max-w-full overflow-x-hidden">
+    <main class="container-me md:mx-auto max-w-full">
       <!-- section home -->
-      <section id="home" class="xl:py-12">
+      <section id="home" class="xl:py-12 px-4 overflow-hidden">
         <div class="grid grid-cols-2">
           <!-- text hero -->
           <div class="">
             <div>
               <h1
-                class="text-bg-h font-extrabold text-[150px] xl:text-[250px] leading-none tracking-wide"
+                class="text-bg-h font-extrabold text-[150px] xl:text-[300px] leading-none tracking-wide"
               >
                 Hello!
               </h1>
@@ -130,13 +130,12 @@
                 class="text-right sm:text-left md:text-lg mb-5 -mr-[60px] md:mt-10"
               >
                 Premium wedding <span class="font-bold">invitation</span> is on
-                your hand. Unlimited guests and
-                <span class="font-bold">modern design</span> for a
+                your hand. Unlimited guests and modern design for an
                 <span class="font-bold">affordable price</span>
               </p>
               <a
                 href="#"
-                class="btn bg-black text-white mb-20 -mr-[60px] hover:scale-110 xl:text-3xl xl:mt-5 xl:ml-5 z-20"
+                class="btn bg-black text-white mb-20 -mr-[60px] hover:scale-110 hover:translate-x-2 xl:text-3xl xl:mt-5 xl:-ml-2 z-20 transition duration-1000 ease-out"
                 >Explore
               </a>
             </div>
@@ -166,183 +165,190 @@
               Fitur <span class="font-bold">kekinian</span> yang akan kamu
               dapatkan
             </p>
-            <p class="mt-10 ml-2 w-1/2 leading-none">klik untuk lihat detail</p>
           </div>
-          <div class="">
-            <div class="grid grid-cols-3 gap-4">
-              <!-- grid row 1 -->
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Countdown</div>
-                  <p class="card-text">
-                    Momen berhargamu tidak akan terlupakan dengan fitur hitung
-                    mundur
-                  </p>
+          <div class="mt-20 lg:mt-32">
+            <p class="md:hidden mb-5 ml-2 w-full text-left leading-none">
+              klik untuk lihat detail
+            </p>
+            <div class="mobile:overflow-auto">
+              <div
+                class="mobile:w-[210%] mobile:flex mobile:flex-row mobile:flex-wrap grid grid-cols-3 gap-4 xl:gap-8"
+              >
+                <!-- grid row 1 -->
+                <div class="card card-expand">
+                  <div class="card-content">
+                    <div class="card-title">Countdown</div>
+                    <p class="card-text">
+                      Momen berhargamu tidak akan terlupakan dengan fitur hitung
+                      mundur
+                    </p>
+                  </div>
+                  <img
+                    src="img/card-img-desktop/countdown-desktop.png"
+                    alt="icon-countdown"
+                    class="card-img hidden md:block"
+                  />
+                  <img
+                    src="img/card-img-mobile/countdown-mobile.png"
+                    alt="icon-countdown"
+                    class="card-img md:hidden"
+                  />
                 </div>
-                <img
-                  src="img/card-img-desktop/countdown-desktop.png"
-                  alt="icon-countdown"
-                  class="card-img hidden md:block"
-                />
-                <img
-                  src="img/card-img-mobile/countdown-mobile.png"
-                  alt="icon-countdown"
-                  class="card-img md:hidden"
-                />
-              </div>
 
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Live Stream</div>
-                  <p class="card-text">
-                    Bagikan momen berhargamu secara langsung
-                  </p>
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-title">Live Stream</div>
+                    <p class="card-text">
+                      Bagikan momen berhargamu secara langsung
+                    </p>
+                  </div>
+                  <img
+                    src="img/card-img-desktop/live-stream-desktop.png"
+                    alt="icon-live-stream"
+                    class="card-img hidden md:block"
+                  />
+                  <img
+                    src="img/card-img-mobile/live-stream-mobile.png"
+                    alt="icon-live-stream"
+                    class="card-img md:hidden"
+                  />
                 </div>
-                <img
-                  src="img/card-img-desktop/live-stream-desktop.png"
-                  alt="icon-live-stream"
-                  class="card-img hidden md:block"
-                />
-                <img
-                  src="img/card-img-mobile/live-stream-mobile.png"
-                  alt="icon-live-stream"
-                  class="card-img md:hidden"
-                />
-              </div>
 
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Google Maps</div>
-                  <p class="card-text">
-                    Tampilkan lokasi acaramu melalui fitur Google Maps
-                  </p>
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-title">Google Maps</div>
+                    <p class="card-text">
+                      Tampilkan lokasi acaramu melalui fitur Google Maps
+                    </p>
+                  </div>
+                  <img
+                    src="img/card-img-desktop/gmaps-desktop.png"
+                    alt="icon-google-maps"
+                    class="card-img hidden md:block"
+                  />
+                  <img
+                    src="img/card-img-mobile/gmaps-mobile.png"
+                    alt="icon-google-maps"
+                    class="card-img md:hidden"
+                  />
                 </div>
-                <img
-                  src="img/card-img-desktop/gmaps-desktop.png"
-                  alt="icon-google-maps"
-                  class="card-img hidden md:block"
-                />
-                <img
-                  src="img/card-img-mobile/gmaps-mobile.png"
-                  alt="icon-google-maps"
-                  class="card-img md:hidden"
-                />
-              </div>
 
-              <!-- grid row 2 -->
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Gallery</div>
-                  <p class="card-text">
-                    Bagikan momen indahmu dalam sebuah galeri foto
-                  </p>
+                <!-- grid row 2 -->
+                <div class="card card-expand">
+                  <div class="card-content">
+                    <div class="card-title">Gallery</div>
+                    <p class="card-text">
+                      Bagikan momen indahmu dalam sebuah galeri foto
+                    </p>
+                  </div>
+                  <img
+                    src="img/card-img-desktop/gallery-desktop.png"
+                    alt="icon-Gallery"
+                    class="card-img hidden md:block"
+                  />
+                  <img
+                    src="img/card-img-mobile/gallery-mobile.png"
+                    alt="icon-Gallery"
+                    class="card-img md:hidden"
+                  />
                 </div>
-                <img
-                  src="img/card-img-desktop/gallery-desktop.png"
-                  alt="icon-Gallery"
-                  class="card-img hidden md:block"
-                />
-                <img
-                  src="img/card-img-mobile/gallery-mobile.png"
-                  alt="icon-Gallery"
-                  class="card-img md:hidden"
-                />
-              </div>
 
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Quotes dan Doa</div>
-                  <p class="card-text">
-                    Bagikan Quotes dan Doa untuk momen berharga ini
-                  </p>
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-title">Quotes dan Doa</div>
+                    <p class="card-text">
+                      Bagikan Quotes dan Doa untuk momen berharga ini
+                    </p>
+                  </div>
+                  <img
+                    src="img/card-img-desktop/quotes-desktop.png"
+                    alt="icon-quotes-doa"
+                    class="card-img hidden md:block"
+                  />
+                  <img
+                    src="img/card-img-mobile/quotes-mobile.png"
+                    alt="icon-quotes-doa"
+                    class="card-img md:hidden"
+                  />
                 </div>
-                <img
-                  src="img/card-img-desktop/quotes-desktop.png"
-                  alt="icon-quotes-doa"
-                  class="card-img hidden md:block"
-                />
-                <img
-                  src="img/card-img-mobile/quotes-mobile.png"
-                  alt="icon-quotes-doa"
-                  class="card-img md:hidden"
-                />
-              </div>
 
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">e-Wallet</div>
-                  <p class="card-text">
-                    Bagikan tautan e-wallet-mu sebagai sarana pemberian cashless
-                  </p>
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-title">e-Wallet</div>
+                    <p class="card-text">
+                      Bagikan tautan e-wallet-mu sebagai sarana pemberian
+                      cashless
+                    </p>
+                  </div>
+                  <img
+                    src="img/card-img-desktop/e-wallet-desktop.png"
+                    alt="icon-e-wallet"
+                    class="card-img hidden md:block"
+                  />
+                  <img
+                    src="img/card-img-mobile/e-wallet-mobile.png"
+                    alt="icon-e-wallet"
+                    class="card-img md:hidden"
+                  />
                 </div>
-                <img
-                  src="img/card-img-desktop/e-wallet-desktop.png"
-                  alt="icon-e-wallet"
-                  class="card-img hidden md:block"
-                />
-                <img
-                  src="img/card-img-mobile/e-wallet-mobile.png"
-                  alt="icon-e-wallet"
-                  class="card-img md:hidden"
-                />
-              </div>
 
-              <!-- grid row 3 -->
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Informasi penting</div>
-                  <p class="card-text">
-                    Tampilan informasi mempelai dan agenda berhargamu
-                  </p>
+                <!-- grid row 3 -->
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-title">Informasi penting</div>
+                    <p class="card-text">
+                      Tampilan informasi mempelai dan agenda berhargamu
+                    </p>
+                  </div>
+                  <img
+                    src="img/card-img-desktop/agenda-desktop.png"
+                    alt="icon-Agenda"
+                    class="card-img hidden md:block"
+                  />
+                  <img
+                    src="img/card-img-mobile/agenda-mobile.png"
+                    alt="icon-Agenda"
+                    class="card-img md:hidden"
+                  />
                 </div>
-                <img
-                  src="img/card-img-desktop/agenda-desktop.png"
-                  alt="icon-Agenda"
-                  class="card-img hidden md:block"
-                />
-                <img
-                  src="img/card-img-mobile/agenda-mobile.png"
-                  alt="icon-Agenda"
-                  class="card-img md:hidden"
-                />
-              </div>
 
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Ucapan</div>
-                  <p class="card-text">
-                    Terima ucapan hangat dan doa dari tamu undanganmu
-                  </p>
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-title">Ucapan</div>
+                    <p class="card-text">
+                      Terima ucapan hangat dan doa dari tamu undanganmu
+                    </p>
+                  </div>
+                  <img
+                    src="img/card-img-desktop/ucapan-desktop.png"
+                    alt="icon-Ucapan"
+                    class="card-img hidden md:block"
+                  />
+                  <img
+                    src="img/card-img-mobile/ucapan-mobile.png"
+                    alt="icon-Ucapan"
+                    class="card-img md:hidden"
+                  />
                 </div>
-                <img
-                  src="img/card-img-desktop/ucapan-desktop.png"
-                  alt="icon-Ucapan"
-                  class="card-img hidden md:block"
-                />
-                <img
-                  src="img/card-img-mobile/ucapan-mobile.png"
-                  alt="icon-Ucapan"
-                  class="card-img md:hidden"
-                />
-              </div>
 
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Responsive</div>
-                  <p class="card-text">
-                    Kartu undanganmu dapat dibuka dari perangkat apapun
-                  </p>
+                <div class="card card-expand">
+                  <div class="card-content">
+                    <div class="card-title">Responsive</div>
+                    <p class="card-text">
+                      Kartu undanganmu dapat dibuka dari perangkat apapun
+                    </p>
+                  </div>
+                  <img
+                    src="img/card-img-desktop/responsive-desktop.png"
+                    alt="icon-Responsive"
+                    class="card-img hidden md:block"
+                  />
+                  <img
+                    src="img/card-img-mobile/responsive-mobile.png"
+                    alt="icon-Responsive"
+                    class="card-img md:hidden"
+                  />
                 </div>
-                <img
-                  src="img/card-img-desktop/responsive-desktop.png"
-                  alt="icon-Responsive"
-                  class="card-img hidden md:block"
-                />
-                <img
-                  src="img/card-img-mobile/responsive-mobile.png"
-                  alt="icon-Responsive"
-                  class="card-img md:hidden"
-                />
               </div>
             </div>
           </div>
