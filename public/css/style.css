@@ -590,12 +590,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 5rem;
 }
 
-.ml-2{
-  margin-left: 0.5rem;
-}
-
 .mb-3{
   margin-bottom: 0.75rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .block{
@@ -842,19 +842,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 64px;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-semibold{
@@ -916,9 +911,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-html{
-  overflow-x: hidden;
-}
+/* html,
+body {
+  @apply overflow-x-hidden;
+} */
 
 .container-me{
   max-width: 100%;
@@ -1632,6 +1628,10 @@ html{
 
   .mobile\:w-\[210\%\]{
     width: 210%;
+  }
+
+  .mobile\:w-\[220\%\]{
+    width: 220%;
   }
 
   .mobile\:flex-row{

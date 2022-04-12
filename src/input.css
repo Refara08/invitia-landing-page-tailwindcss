@@ -6,9 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+/* html,
+body {
   @apply overflow-x-hidden;
-}
+} */
 
 .container-me {
   @apply max-w-full md:max-w-[90vw] xl:max-w-[80vw];
