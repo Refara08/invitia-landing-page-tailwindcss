@@ -128,11 +128,23 @@
 /* Card carousel */
 
 .card {
-  @apply flex bg-bg-h md:h-[130px] lg:h-[150px] xl:h-[175px] p-4 lg:px-6 rounded-2xl relative overflow-hidden;
+  @apply flex flex-col justify-center items-center bg-bg-h hover:bg-black md:h-[130px] lg:h-[150px] xl:h-[175px] p-4 lg:px-6 rounded-2xl relative overflow-hidden cursor-pointer transition-300ms;
+}
+
+.card:hover .card-title {
+  @apply text-white transition-300ms;
+}
+
+.card:hover .card-text {
+  @apply text-white transition-300ms;
+}
+
+.card:hover .card-img {
+  @apply scale-125 -translate-y-2 transition duration-1000 ease-in-out;
 }
 
 .card-content {
-  @apply z-10 lg:mt-2 xl:mt-4;
+  @apply text-center md:text-left z-10 lg:mt-2 xl:mt-4;
 }
 
 .card-title {
@@ -140,9 +152,9 @@
 }
 
 .card-text {
-  @apply text-xs lg:text-sm lg:leading-5 pr-[30%] lg:pr-[40%];
+  @apply hidden md:block text-xs lg:text-sm lg:leading-5 pr-[30%] lg:pr-[40%];
 }
 
 .card-img {
-  @apply absolute bottom-0 right-[5%] w-[45%] xl:w-[40%];
+  @apply md:absolute md:bottom-0 md:right-[5%] md:w-[45%] xl:w-[40%];
 }
