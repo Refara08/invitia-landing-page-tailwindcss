@@ -582,16 +582,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 5rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
 }
 
-.-mt-20{
-  margin-top: -5rem;
-}
-
-.mb-12{
-  margin-bottom: 3rem;
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .block{
@@ -713,6 +713,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -731,6 +735,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-center{
   justify-content: center;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .overflow-x-hidden{
@@ -759,11 +767,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-red-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .p-8{
@@ -840,14 +843,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 64px;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-semibold{
@@ -990,10 +993,6 @@ body {
     transform: translateY(50%);
   }
 
-  /* 50% {
-    transform: translateY(50%) rotate(90deg);
-  } */
-
   100% {
     transform: translateY(50%) rotate(135deg);
   }
@@ -1007,10 +1006,6 @@ body {
   50% {
     transform: translateY(50%);
   }
-
-  /* 50% {
-    transform: translateY(50%) rotate(90deg);
-  } */
 
   100% {
     transform: translateY(50%) rotate(135deg);
@@ -1026,10 +1021,6 @@ body {
     transform: translateY(-50%);
   }
 
-  /* 50% {
-    transform: translateY(-50%) rotate(180deg);
-  } */
-
   100% {
     transform: translateY(-50%) rotate(225deg);
   }
@@ -1044,10 +1035,6 @@ body {
     transform: translateY(-50%);
   }
 
-  /* 50% {
-    transform: translateY(-50%) rotate(180deg);
-  } */
-
   100% {
     transform: translateY(-50%) rotate(225deg);
   }
@@ -1057,10 +1044,6 @@ body {
   0% {
     transform: translateY(50%) rotate(135deg);
   }
-
-  /* 25% {
-    transform: translateY(50%) rotate(90deg);
-  } */
 
   50% {
     transform: translateY(50%);
@@ -1076,10 +1059,6 @@ body {
     transform: translateY(50%) rotate(135deg);
   }
 
-  /* 25% {
-    transform: translateY(50%) rotate(90deg);
-  } */
-
   50% {
     transform: translateY(50%);
   }
@@ -1093,10 +1072,6 @@ body {
   0% {
     transform: translateY(-50%) rotate(225deg);
   }
-
-  /* 25% {
-    transform: translateY(-50%) rotate(180deg);
-  } */
 
   50% {
     transform: translateY(-50%);
@@ -1112,10 +1087,6 @@ body {
     transform: translateY(-50%) rotate(225deg);
   }
 
-  /* 25% {
-    transform: translateY(-50%) rotate(180deg);
-  } */
-
   50% {
     transform: translateY(-50%);
   }
@@ -1123,6 +1094,68 @@ body {
   100% {
     tansform: translateY(100%);
   }
+}
+
+/* Card carousel */
+
+.card{
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+@media (min-width: 768px){
+  .card{
+    height: 130px;
+  }
+}
+
+@media (min-width: 1024px){
+  .card{
+    height: 150px;
+  }
+}
+
+.card-content{
+  z-index: 10;
+}
+
+@media (min-width: 1024px){
+  .card-content{
+    margin-top: 0.5rem;
+  }
+}
+
+.card-title{
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.card-text{
+  padding-right: 30%;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 1024px){
+  .card-text{
+    padding-right: 37%;
+  }
+
+  .card-text{
+    line-height: 1.25rem;
+  }
+}
+
+.card-img{
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+  width: 45%;
 }
 
 .hover\:scale-110:hover{

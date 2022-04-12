@@ -67,10 +67,6 @@ body {
     transform: translateY(50%);
   }
 
-  /* 50% {
-    transform: translateY(50%) rotate(90deg);
-  } */
-
   100% {
     transform: translateY(50%) rotate(135deg);
   }
@@ -85,10 +81,6 @@ body {
     transform: translateY(-50%);
   }
 
-  /* 50% {
-    transform: translateY(-50%) rotate(180deg);
-  } */
-
   100% {
     transform: translateY(-50%) rotate(225deg);
   }
@@ -98,10 +90,6 @@ body {
   0% {
     transform: translateY(50%) rotate(135deg);
   }
-
-  /* 25% {
-    transform: translateY(50%) rotate(90deg);
-  } */
 
   50% {
     transform: translateY(50%);
@@ -117,10 +105,6 @@ body {
     transform: translateY(-50%) rotate(225deg);
   }
 
-  /* 25% {
-    transform: translateY(-50%) rotate(180deg);
-  } */
-
   50% {
     transform: translateY(-50%);
   }
@@ -128,4 +112,26 @@ body {
   100% {
     tansform: translateY(100%);
   }
+}
+
+/* Card carousel */
+
+.card {
+  @apply flex bg-bg-h md:h-[130px] lg:h-[150px] p-4 rounded-2xl relative overflow-hidden;
+}
+
+.card-content {
+  @apply z-10 lg:mt-2;
+}
+
+.card-title {
+  @apply font-bold mb-1;
+}
+
+.card-text {
+  @apply text-xs lg:leading-5 pr-[30%] lg:pr-[37%];
+}
+
+.card-img {
+  @apply absolute bottom-0 right-[5%] w-[45%];
 }
