@@ -6,11 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html,
-body {
-  width: 100%;
-  overflow-x: hidden;
-} */
+.container-me {
+  @apply max-w-full md:max-w-[90vw] xl:max-w-[80vw];
+}
 
 .hamburger-line {
   @apply h-[2px] w-[18px] sm:h-[3px] sm:w-[22px] block;
@@ -114,14 +112,27 @@ body {
   }
 }
 
+/* heading */
+.section-layout {
+  @apply py-8 mb-20 -mt-20 xl:py-16;
+}
+
+.title-heading {
+  @apply text-bg-h font-extrabold text-[150px] xl:text-[250px] leading-none tracking-wide;
+}
+
+.p-heading {
+  @apply text-lg xl:text-2xl xl:-mt-24 -mt-16 ml-2 w-1/2 leading-none;
+}
+
 /* Card carousel */
 
 .card {
-  @apply flex bg-bg-h md:h-[130px] lg:h-[150px] xl:h-[200px] p-4 lg:px-6 rounded-2xl relative overflow-hidden;
+  @apply flex bg-bg-h md:h-[130px] lg:h-[150px] xl:h-[175px] p-4 lg:px-6 rounded-2xl relative overflow-hidden;
 }
 
 .card-content {
-  @apply z-10 lg:mt-2 xl:mt-8;
+  @apply z-10 lg:mt-2 xl:mt-4;
 }
 
 .card-title {
@@ -129,9 +140,9 @@ body {
 }
 
 .card-text {
-  @apply text-xs lg:text-sm lg:leading-5 pr-[30%] lg:pr-[37%];
+  @apply text-xs lg:text-sm lg:leading-5 pr-[30%] lg:pr-[40%];
 }
 
 .card-img {
-  @apply absolute bottom-0 right-[5%] w-[45%];
+  @apply absolute bottom-0 right-[5%] w-[45%] xl:w-[40%];
 }
