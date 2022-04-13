@@ -809,6 +809,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.75rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -910,11 +914,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
-
-/* html,
-body {
-  @apply overflow-x-hidden;
-} */
 
 .container-me{
   max-width: 100%;
@@ -1125,8 +1124,6 @@ body {
   margin-top: -5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 @media (min-width: 1280px){
@@ -1250,6 +1247,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
+  line-height: 1;
 }
 
 @media (min-width: 1024px){
@@ -1320,7 +1318,6 @@ body {
 /* card hover */
 
 .card:hover .card-title{
-  line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -1389,14 +1386,34 @@ body {
   display: block;
 }
 
-.card.card-expand .card-content{
-  text-align: left;
+@media (max-width: 767px){
+  .card.card-expand .card-text{
+    padding-right: 40%;
+  }
+
+  .card.card-expand .card-text{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .card.card-expand .card-content{
+    padding-left: 0.75rem;
+  }
+
+  .card.card-expand .card-content{
+    text-align: left;
+  }
 }
 
 .card.card-expand .card-title{
-  margin-bottom: 0.75rem;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+@media (max-width: 767px){
+  .card.card-expand .card-title{
+    margin-bottom: 0.75rem;
+  }
 }
 
 .card.card-expand:hover .card-title{
@@ -1421,6 +1438,17 @@ body {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
+
+/* note for future me:
+#nav
+1. fix the client login button (js)
+
+#section fiture
+1. rapihin layout
+2. bikin javascript event
+3. tes di actual mobile device
+
+*/
 
 .hover\:translate-x-2:hover{
   --tw-translate-x: 0.5rem;
@@ -1624,10 +1652,6 @@ body {
 @media (max-width: 767px){
   .mobile\:flex{
     display: flex;
-  }
-
-  .mobile\:w-\[210\%\]{
-    width: 210%;
   }
 
   .mobile\:w-\[220\%\]{
