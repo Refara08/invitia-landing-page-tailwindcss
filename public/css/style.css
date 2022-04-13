@@ -931,6 +931,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+/* homepage --------------------------------------------------------------------------- */
+
 .hamburger-line{
   display: block;
   height: 2px;
@@ -1167,6 +1169,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2rem;
   }
 }
+
+/* section fitur ---------------------------------------------------------------------------------------- */
 
 /* Card carousel */
 
@@ -1500,11 +1504,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .card.card-expand .card-content{
-    margin-top: 0.5rem;
+    margin-top: 0px;
   }
 
   .card.card-expand .card-content{
-    padding-left: 0.75rem;
+    padding-left: 0.5rem;
   }
 
   .card.card-expand .card-content{
@@ -1549,10 +1553,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 #nav
 1. fix the client login button (js)
 
+#section paket
+1. build html
+2. css styling
+
 #section fiture
-1. rapihin layout
-2. bikin javascript event
-3. tes di actual mobile device
+1. rapihin layout (done)
+2. bikin javascript event (done)
+3. tes di actual mobile device (done)
 
 */
 

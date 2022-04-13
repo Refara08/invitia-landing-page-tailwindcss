@@ -10,6 +10,8 @@
   @apply max-w-full md:max-w-[90vw] xl:max-w-[80vw];
 }
 
+/* homepage --------------------------------------------------------------------------- */
+
 .hamburger-line {
   @apply h-[2px] w-[18px] sm:h-[3px] sm:w-[22px] block;
 }
@@ -125,6 +127,7 @@
   @apply text-base xl:text-2xl xl:-mt-24 -mt-16 ml-2 w-1/2 leading-none;
 }
 
+/* section fitur ---------------------------------------------------------------------------------------- */
 /* Card carousel */
 
 .card {
@@ -178,7 +181,7 @@
 }
 
 .card.card-expand .card-content {
-  @apply mobile:text-left mobile:pl-3 mobile:mt-2;
+  @apply mobile:text-left mobile:pl-2 mobile:mt-0;
 }
 
 .card.card-expand .card-title {
@@ -193,9 +196,13 @@
 #nav
 1. fix the client login button (js)
 
+#section paket
+1. build html
+2. css styling
+
 #section fiture
-1. rapihin layout
-2. bikin javascript event
-3. tes di actual mobile device
+1. rapihin layout (done)
+2. bikin javascript event (done)
+3. tes di actual mobile device (done)
 
 */
