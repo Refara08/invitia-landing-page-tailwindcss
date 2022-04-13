@@ -4,6 +4,7 @@ const burgerLineArr = burger.children;
 const mobileMenu = document.querySelector("#menu-mobile");
 const desktopMenu = document.querySelector("#menu-desktop");
 const nav = document.querySelector("#nav");
+const signInDesktop = document.querySelector("#sign-in-desktop");
 const logoTextLeft = document.querySelector("#logo-text-left");
 const logoTextRight = document.querySelector("#logo-text-right");
 const cardParent = document.querySelector("#card-parent");
@@ -28,8 +29,12 @@ const navBlack = () => {
     logoTextLeft.classList.remove("md:text-black");
   }
 
-  //nav desktop
+  // nav desktop
   desktopMenu.classList.add("text-white");
+
+  // sign in desktop
+  signInDesktop.classList.remove("sign-in-desktop");
+  signInDesktop.classList.add("sign-in-desktop-scroll");
 };
 
 const navWhite = () => {
@@ -54,6 +59,10 @@ const navWhite = () => {
 
   //nav desktop
   desktopMenu.classList.remove("text-white");
+
+  // sign in desktop
+  signInDesktop.classList.remove("sign-in-desktop-scroll");
+  signInDesktop.classList.add("sign-in-desktop");
 };
 
 const mobileActive = () => {

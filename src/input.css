@@ -11,6 +11,13 @@
 }
 
 /* homepage --------------------------------------------------------------------------- */
+.sign-in-desktop {
+  @apply bg-black text-white border-2 border-white hover:bg-white hover:text-black hover:border-black;
+}
+
+.sign-in-desktop-scroll {
+  @apply bg-white text-black border-2 border-black hover:bg-black hover:text-white hover:border-white;
+}
 
 .hamburger-line {
   @apply h-[2px] w-[18px] sm:h-[3px] sm:w-[22px] block;
@@ -25,7 +32,7 @@
 }
 
 .btn {
-  @apply inline-block py-4 px-10 rounded-full cursor-pointer;
+  @apply inline-block rounded-full cursor-pointer;
 }
 
 .transition-300ms {
