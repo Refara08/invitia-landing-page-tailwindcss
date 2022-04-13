@@ -138,7 +138,7 @@
 }
 
 .card-title {
-  @apply font-bold mb-1 text-lg leading-none lg:text-xl xl:mb-2;
+  @apply font-bold text-lg mb-1 leading-none lg:text-xl xl:mb-2;
 }
 
 .card-text {
@@ -156,7 +156,7 @@
 }
 
 .card:hover .card-text {
-  @apply text-white scale-110 translate-x-5 transition duration-1000 ease-out;
+  @apply text-white  md:scale-110 md:translate-x-5 transition duration-1000 ease-out;
 }
 
 .card:hover .card-img {
@@ -182,11 +182,11 @@
 }
 
 .card.card-expand .card-title {
-  @apply text-xl mobile:mb-3;
+  @apply text-xl mobile:mb-1;
 }
 
 .card.card-expand:hover .card-title {
-  @apply mobile:scale-110 mobile:translate-x-5 transition leading-none duration-1000 ease-out;
+  @apply mobile:scale-110 mobile:translate-x-3 transition duration-1000 ease-out;
 }
 
 /* note for future me:
