@@ -128,17 +128,17 @@
 /* Card carousel */
 
 .card {
-  @apply mobile:basis-[15%] flex flex-col justify-center bg-bg-h  hover:bg-black md:h-[130px] lg:h-[150px] xl:h-[175px] p-4 lg:px-6 rounded-2xl relative overflow-hidden cursor-pointer transition-300ms;
+  @apply mobile:basis-[15%] flex flex-col justify-center lg:justify-start xl:justify-center bg-bg-h  hover:bg-black md:h-[130px] lg:h-[150px] xl:h-[175px] p-4 md:py-2 lg:py-3 lg:px-6 xl:py-5 rounded-2xl relative overflow-hidden cursor-pointer transition-300ms;
 }
 
 /* basic properties */
 
 .card-content {
-  @apply text-center md:text-left z-10 lg:mt-2;
+  @apply text-center md:text-left md:ml-1 z-10 lg:mt-2;
 }
 
 .card-title {
-  @apply font-bold text-lg mb-1 leading-none lg:text-xl xl:mb-2;
+  @apply font-bold text-base sm:text-lg -ml-1 my-1 sm:mb-0 sm:mt-4 md:mt-0 md:ml-0 leading-none lg:text-xl lg:mb-2 xl:mb-2;
 }
 
 .card-text {
@@ -146,17 +146,17 @@
 }
 
 .card-img {
-  @apply md:absolute md:bottom-0 md:right-[5%] md:w-[45%] xl:w-[40%];
+  @apply md:absolute md:bottom-0 md:right-[5%]  md:w-[45%] xl:w-[40%];
 }
 
 /* card hover */
 
 .card:hover .card-title {
-  @apply text-white md:scale-110 md:translate-x-5 transition duration-1000 ease-out;
+  @apply text-white md:scale-110 md:-translate-y-1 md:translate-x-3 lg:translate-x-4 transition duration-1000 ease-out;
 }
 
 .card:hover .card-text {
-  @apply text-white  md:scale-110 md:translate-x-5 transition duration-1000 ease-out;
+  @apply text-white  md:scale-110 md:translate-x-3 lg:scale-105 lg:translate-x-2 transition duration-1000 ease-out;
 }
 
 .card:hover .card-img {
@@ -166,19 +166,19 @@
 /* card expand */
 
 .card.card-expand {
-  @apply basis-[31.8%];
+  @apply mobile:basis-[31.8%] mobile:justify-start;
 }
 
 .card.card-expand .card-img {
-  @apply absolute w-[45%] right-0 bottom-0 -mr-3;
+  @apply absolute w-[45%] mobile:right-0 bottom-0 -mr-3;
 }
 
 .card.card-expand .card-text {
-  @apply block mobile:pr-[40%] mobile:text-sm;
+  @apply block mobile:pr-[35%] mobile:text-sm;
 }
 
 .card.card-expand .card-content {
-  @apply mobile:text-left mobile:pl-3;
+  @apply mobile:text-left mobile:pl-3 mobile:mt-2;
 }
 
 .card.card-expand .card-title {
