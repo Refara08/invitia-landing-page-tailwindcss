@@ -1811,4 +1811,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   .mobile\:overflow-auto{
     overflow: auto;
   }
+
+  .mobile\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mobile\:pl-4{
+    padding-left: 1rem;
+  }
 }
