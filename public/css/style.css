@@ -1694,11 +1694,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (max-width: 639px){
   .paket-img{
-    margin-bottom: -6rem;
+    margin-bottom: -6.5rem;
   }
 
   .paket-img{
-    width: 50%;
+    width: 90%;
   }
 }
 
@@ -1969,8 +1969,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 220%;
   }
 
-  .mobile\:w-\[230\%\]{
-    width: 230%;
+  .mobile\:w-\[250\%\]{
+    width: 250%;
   }
 
   .mobile\:flex-row{

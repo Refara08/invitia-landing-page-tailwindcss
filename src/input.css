@@ -227,7 +227,7 @@
 }
 
 .paket-img {
-  @apply mobile:w-[50%] mobilexl:w-[60%] mobilexl:-mb-20 mobile:-mb-24 lg:-mb-16 mobilexl:mr-5;
+  @apply mobile:w-[90%] mobilexl:w-[60%] mobilexl:-mb-20 mobile:-mb-[6.5rem] lg:-mb-16 mobilexl:mr-5;
 }
 
 .paket-bottom {
