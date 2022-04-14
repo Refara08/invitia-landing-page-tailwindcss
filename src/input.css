@@ -192,7 +192,7 @@
 }
 
 .card.card-expand .card-title {
-  @apply text-xl mobile:mb-1;
+  @apply text-xl mobile:mb-1 mobile:mt-0;
 }
 
 .card.card-expand:hover .card-title {
