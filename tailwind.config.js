@@ -8,10 +8,13 @@ module.exports = {
       },
       colors: {
         "bg-h": "#EEEEEE",
+        "gray-lighter": "#F5F5F5",
       },
 
       screens: {
-        mobile: { max: "767px" },
+        tablet: { max: "1023px" },
+        mobilexl: { max: "767px" },
+        mobile: { max: "639px" },
       },
     },
   },

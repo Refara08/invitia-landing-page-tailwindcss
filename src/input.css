@@ -176,15 +176,15 @@
 /* card expand */
 
 .card.card-expand {
-  @apply mobile:basis-[31.8%] mobile:justify-start;
+  @apply mobile:basis-[31.8%] mobilexl:justify-center;
 }
 
 .card.card-expand .card-img {
-  @apply absolute w-[45%] mobile:right-0 bottom-0 -mr-3;
+  @apply mobile:absolute mobile:w-[45%] mobile:right-0 mobile:bottom-0 -mr-3;
 }
 
 .card.card-expand .card-text {
-  @apply block mobile:pr-[35%] mobile:text-sm;
+  @apply mobile:block mobile:pr-[35%] mobile:text-sm;
 }
 
 .card.card-expand .card-content {
@@ -197,6 +197,53 @@
 
 .card.card-expand:hover .card-title {
   @apply mobile:scale-110 mobile:translate-x-3 transition duration-1000 ease-out;
+}
+
+/* section paket ---------------------------------------------------------------------------------------- */
+/* Card carousel */
+
+.paket {
+  @apply rounded-2xl overflow-hidden;
+}
+
+.paket-top {
+  @apply bg-bg-h flex place-items-center overflow-hidden;
+}
+
+.paket-content {
+  @apply pl-11 pb-9 h-[259px] flex flex-col justify-end;
+}
+
+.paket-title {
+  @apply text-4xl mb-2;
+}
+
+.harga-coret {
+  @apply block max-w-fit line-through text-base font-semibold py-1 mb-2;
+}
+
+.harga-now {
+  @apply block max-w-fit text-lg text-white bg-black py-1 px-3 rounded-lg;
+}
+
+.paket-img {
+  @apply mobile:w-[50%] mobilexl:w-[60%] mobilexl:-mb-20 mobile:-mb-24 lg:-mb-16 mobilexl:mr-5;
+}
+
+.paket-bottom {
+  @apply bg-gray-lighter h-[287px] px-8 py-8 flex flex-col justify-between;
+}
+
+.paket-ul {
+  @apply list-disc ml-6;
+}
+
+.paket-ul > li {
+  @apply mb-3;
+}
+
+.paket-btn {
+  @apply btn bg-black text-white w-full py-2 text-center;
 }
 
 /* note for future me:
