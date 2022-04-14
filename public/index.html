@@ -104,9 +104,9 @@
     <!-- end of nav div -->
 
     <!-- start of main -->
-    <main class="container-me md:mx-auto max-w-full overflow-hidden">
+    <main class="max-w-full overflow-hidden">
       <!-- section home -->
-      <section id="home" class="xl:py-12 px-4">
+      <section id="home" class="container-me md:py-12 px-4 md:px-8">
         <div class="grid grid-cols-2">
           <!-- text hero -->
           <div class="">
@@ -143,16 +143,18 @@
               </a>
             </div>
           </div>
-          <div class="flex place-items-center">
+          <div class="grid justify-center items-start md:hidden">
             <img
               src="img/saly.png"
               alt=""
-              class="-rotate-[5deg] -translate-y-[25%] translate-x-[35%] scale-[2] sm:-translate-y-0 sm:scale-[1.8] md:hidden"
+              class="-rotate-[5deg] scale-[2] mt-[100px] translate-x-10 sm:scale-[1.8]"
             />
+          </div>
+          <div class="place-items-center hidden md:flex">
             <img
               src="img/saly-desktop.png"
               alt=""
-              class="hidden md:block md:scale-[1.5] md:translate-x-[10%] lg:-translate-y-10 lg:scale-[1.2] lg:translate-x-[20%] xl:-translate-y-14 xl:translate-x-[15%] xl:scale-[1.2]"
+              class="md:scale-[2] xl:scale-[1.6] translate-x-10"
             />
           </div>
         </div>
@@ -162,17 +164,17 @@
       <!-- fitur section -->
       <section id="fitur" class="section-layout">
         <div>
-          <div class="mb-12 px-4">
+          <div class="container-me mb-12 px-4 md:px-8">
             <h1 class="title-heading">Fitur</h1>
             <p class="p-heading">
               Fitur <span class="font-bold">kekinian</span> yang akan kamu
               dapatkan
             </p>
           </div>
-          <div class="mt-20 lg:mt-32">
-            <div class="mobile:overflow-auto">
+          <div class="mt-20 lg:mt-32 container-me-scrollable">
+            <div class="tablet:overflow-auto">
               <div
-                class="mobile:w-[220%] px-4 mobile:flex mobile:flex-row mobile:flex-wrap grid grid-cols-3 gap-4 xl:gap-8"
+                class="mobile:w-[220%] tablet:w-[145%] px-4 md:px-8 tablet:flex tablet:flex-row tablet:flex-wrap grid grid-cols-3 gap-4 xl:gap-8"
                 id="card-parent"
               >
                 <!-- grid row 1 -->
@@ -365,16 +367,18 @@
       <!-- start of paket -->
       <section id="paket" class="section-layout">
         <div>
-          <div class="mb-12 px-4">
+          <div class="container-me mb-12 px-4 md:px-8">
             <h1 class="title-heading">Paket</h1>
             <p class="p-heading">
               Fitur <span class="font-bold">kekinian</span> yang akan kamu
               dapatkan
             </p>
           </div>
-          <div class="mobilexl:overflow-auto max-h-fit mt-32">
+          <div
+            class="container-me-scrollable tablet:overflow-auto max-h-fit mt-20 px-4 md:px-8"
+          >
             <div
-              class="mobile:w-[250%] mobilexl:w-[180%] mobilexl:px-6 mobile:px-4 mobilexl:flex mobilexl:flex-row grid grid-cols-3 gap-4 xl:gap-8"
+              class="mobile:w-[250%] mobilexl:w-[180%] tablet:w-[170%] mobilexl:flex mobilexl:flex-row grid grid-cols-3 gap-4 md:gap-8 xl:gap-8"
             >
               <!-- card paket -->
               <div class="paket">
