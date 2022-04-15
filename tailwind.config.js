@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         body: "#F9F9F9",
+        diskon: "#E71E29",
         "bg-h": "#EEEEEE",
         "gray-lighter": "#F5F5F5",
       },

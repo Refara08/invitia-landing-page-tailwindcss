@@ -148,7 +148,7 @@
 /* basic properties */
 
 .card-content {
-  @apply text-center md:text-left md:ml-1 z-10 lg:mt-2;
+  @apply text-center md:text-left md:ml-1 z-10 lg:mt-2 xl:-mt-10;
 }
 
 .card-title {
@@ -207,7 +207,7 @@
 /* Card carousel */
 
 .paket {
-  @apply rounded-2xl overflow-hidden w-[100%] aspect-[2/4] 2xl:aspect-[2/3] tablet:aspect-[2/3] mobilexl:aspect-[2/4] flex flex-col border-2 border-white;
+  @apply rounded-2xl overflow-hidden w-[100%] aspect-[2/4] 2xl:aspect-[2/3] tablet:aspect-[2/3] mobilexl:aspect-[2/4] flex flex-col;
 }
 
 .paket-top {
@@ -236,6 +236,10 @@
 
 .paket-img {
   @apply absolute -bottom-[2%] right-[0] w-[40%] xl:w-[40%];
+}
+
+.paket-diskon {
+  @apply absolute -top-[4%] -right-[12%] md:-top-[4%] md:-right-[10%] xl:-top-[3%] xl:-right-[12%] 2xl:-top-[5%] 2xl:-right-[9.5%] bg-diskon text-white pb-2 py-6 px-10 rotate-45;
 }
 
 /* absolute -bottom-0 right-0 w-[40%] xl:w-[30%] */
