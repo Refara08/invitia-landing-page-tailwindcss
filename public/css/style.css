@@ -758,14 +758,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
-.bg-white{
+.bg-body{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-8{
@@ -1196,7 +1201,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .title-heading{
-  font-size: 150px;
+  font-size: 120px;
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0.025em;
@@ -1211,7 +1216,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .p-heading{
-  margin-top: -4rem;
+  margin-top: -3rem;
   margin-left: 0.5rem;
   width: 50%;
   font-size: 1rem;
@@ -1669,47 +1674,70 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* Card carousel */
 
 .paket{
+  display: flex;
+  aspect-ratio: 2 / 4;
+  width: 100%;
+  flex-direction: column;
   overflow: hidden;
   border-radius: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+@media (min-width: 1536px){
+  .paket{
+    aspect-ratio: 2 / 3;
+  }
+}
+
+@media (max-width: 1023px){
+  .paket{
+    aspect-ratio: 2 / 3;
+  }
+}
+
+@media (max-width: 767px){
+  .paket{
+    aspect-ratio: 2 / 4;
+  }
 }
 
 .paket-top{
   position: relative;
   display: flex;
-  place-items: center;
+  min-height: 40%;
+  align-items: flex-end;
+  justify-content: center;
   overflow: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+  padding: 2rem;
 }
 
+/* mobilexl:h-[259px] tablet:h-[300px] h-[300px] */
+
 .paket-content{
-  z-index: 10;
   display: flex;
-  height: 300px;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-end;
-  padding-left: 2.75rem;
-  padding-bottom: 2.25rem;
-  padding-right: 50%;
+  padding-right: 40%;
+}
+
+@media (min-width: 768px){
+  .paket-content{
+    margin-left: 1.25rem;
+  }
 }
 
 @media (min-width: 1280px){
   .paket-content{
-    padding-left: 3.5rem;
+    padding-right: 35%;
   }
 }
 
-@media (max-width: 1023px){
-  .paket-content{
-    height: 300px;
-  }
-}
-
-@media (max-width: 767px){
-  .paket-content{
-    height: 259px;
-  }
-}
+/* pl-11 xl:pl-14 pr-[50%] md:pr-[30%] */
 
 .paket-title{
   margin-bottom: 0.5rem;
@@ -1717,17 +1745,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
-@media (max-width: 1023px){
+@media (min-width: 768px){
   .paket-title{
     font-size: 3rem;
     line-height: 1;
   }
 }
 
-@media (max-width: 767px){
+@media (min-width: 1280px){
   .paket-title{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .paket-title{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -1780,46 +1815,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .paket-img{
   position: absolute;
-  bottom: -0.5rem;
-  right: 0px;
+  bottom: -2%;
+  right: 0;
   width: 40%;
 }
+
+@media (min-width: 1280px){
+  .paket-img{
+    width: 40%;
+  }
+}
+
+/* absolute -bottom-0 right-0 w-[40%] xl:w-[30%] */
 
 /* mobile:w-[90%] mobilexl:w-[60%] mobilexl:-mb-20 mobile:-mb-[6.5rem] lg:-mb-16 mobilexl:mr-5 */
 
 .paket-bottom{
   display: flex;
+  min-height: 60%;
   flex-direction: column;
   justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
-@media (min-width: 1280px){
-  .paket-bottom{
-    padding: 3rem;
-  }
-
-  .paket-bottom{
-    padding-bottom: 3rem;
-  }
-}
-
-@media (max-width: 1023px){
-  .paket-bottom{
-    height: 350px;
-  }
-}
-
-@media (max-width: 767px){
-  .paket-bottom{
-    height: 287px;
-  }
-}
+/* mobilexl:h-[287px] tablet:h-[350px] */
 
 .paket-ul{
   margin-left: 1.5rem;
@@ -1829,19 +1850,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .paket-ul > li{
   margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-@media (max-width: 1023px){
+@media (min-width: 768px){
   .paket-ul > li{
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-@media (max-width: 767px){
+@media (min-width: 1024px){
+  .paket-ul > li{
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 1280px){
   .paket-ul > li{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .paket-ul > li{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1852,6 +1888,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   display: inline-block;
@@ -1859,23 +1897,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
+@media (min-width: 768px){
+  .paket-btn{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .paket-btn{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (min-width: 1280px){
   .paket-btn{
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (max-width: 1023px){
-  .paket-btn{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (max-width: 767px){
-  .paket-btn{
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
@@ -2083,8 +2119,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
-  .mobilexl\:w-\[180\%\]{
-    width: 180%;
+  .mobilexl\:w-\[200\%\]{
+    width: 200%;
   }
 
   .mobilexl\:flex-row{
@@ -2097,7 +2133,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 220%;
   }
 
-  .mobile\:w-\[250\%\]{
-    width: 250%;
+  .mobile\:w-\[270\%\]{
+    width: 270%;
   }
 }

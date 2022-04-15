@@ -7,6 +7,7 @@ module.exports = {
         inter: ["Inter"],
       },
       colors: {
+        body: "#F9F9F9",
         "bg-h": "#EEEEEE",
         "gray-lighter": "#F5F5F5",
       },

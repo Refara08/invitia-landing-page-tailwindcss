@@ -12,7 +12,7 @@ const cardParent = document.querySelector("#card-parent");
 // ### Functions ### =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=--=-=-=-=-=-=--=-=-=-=-=--=-=-=-=-=-=-=--
 const navBlack = () => {
   // nav
-  nav.classList.remove("bg-white");
+  nav.classList.remove("bg-body");
   nav.classList.add("bg-black");
 
   // logo remove attr from unused link
@@ -40,7 +40,7 @@ const navBlack = () => {
 const navWhite = () => {
   // nav
   nav.classList.remove("bg-black");
-  nav.classList.add("bg-white");
+  nav.classList.add("bg-body");
 
   // logo remove attr
   logoTextRight.setAttribute("href", "#");
