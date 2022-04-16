@@ -135,7 +135,7 @@
 }
 
 .p-heading {
-  @apply text-base xl:text-2xl xl:-mt-24 -mt-12 ml-2 w-1/2 leading-none;
+  @apply text-base xl:text-2xl xl:-mt-24 -mt-10 ml-2 w-[60%] lg:w-[30%] lg:-mt-14 leading-none;
 }
 
 /* section fitur ---------------------------------------------------------------------------------------- */
@@ -219,13 +219,9 @@
   @apply bg-bg-h flex justify-center items-end py-4 px-8 md:p-4 overflow-hidden min-h-[40%] relative;
 }
 
-/* mobilexl:h-[259px] tablet:h-[300px] h-[300px] */
-
 .paket-content {
   @apply flex flex-col justify-end items-start pr-[40%] xl:pr-[35%] md:ml-5;
 }
-
-/* pl-11 xl:pl-14 pr-[50%] md:pr-[30%] */
 
 .paket-title {
   @apply text-3xl md:text-5xl xl:text-4xl 2xl:text-5xl mb-2;
@@ -247,14 +243,9 @@
   @apply absolute -top-[4%] -right-[13%] md:-top-[4%] md:-right-[10%] xl:-top-[3%] xl:-right-[12%] 2xl:-top-[5%] 2xl:-right-[9.5%] bg-diskon text-white pb-2 py-6 px-10 rotate-45;
 }
 
-/* absolute -bottom-0 right-0 w-[40%] xl:w-[30%] */
-/* mobile:w-[90%] mobilexl:w-[60%] mobilexl:-mb-20 mobile:-mb-[6.5rem] lg:-mb-16 mobilexl:mr-5 */
-
 .paket-bottom {
   @apply bg-gray-lighter px-4 py-4  md:p-8 flex flex-col justify-between min-h-[60%];
 }
-
-/* mobilexl:h-[287px] tablet:h-[350px] */
 
 .paket-ul {
   @apply list-disc ml-6 mb-5 md:mb-10;
@@ -268,17 +259,83 @@
   @apply btn bg-black text-white xl:text-xl text-lg md:text-xl md:py-3 w-full py-2 text-center hover:bg-white hover:text-black border-2 hover:border-black transition-300ms;
 }
 
+/* section daftar ---------------------------------------------------------------------------------------- */
+/* Card carousel */
+
+.daftar-parent {
+  @apply w-full lg:flex lg:gap-x-6;
+}
+
+.daftar-parent > .daftar:nth-child(odd) {
+  @apply flex-row lg:flex-col;
+}
+
+.daftar-parent > .daftar:nth-child(even) {
+  @apply flex-row-reverse lg:flex-col;
+}
+
+.daftar {
+  @apply flex justify-start items-center lg:items-start mb-10 xl:mb-0;
+}
+
+.daftar-content {
+  @apply flex relative;
+}
+
+.daftar-num {
+  @apply w-[30px] lg:w-[20px]  aspect-square text-sm lg:text-xs grid place-items-center rounded-full bg-black text-white absolute;
+}
+
+.daftar-text {
+  @apply pl-[15%] lg:pl-[10%] text-base xl:text-xl;
+}
+
+.daftar-img {
+  @apply w-[30%] lg:w-[45%] lg:mb-5;
+}
+
+/* section contact ---------------------------------------------------------------------------------------- */
+/* Card carousel */
+
+.contact-img {
+  @apply w-[50%] px-5 md:w-[40%] xl:w-[30%] 2xl:w-[100px];
+}
+
+.contact-content {
+  @apply mb-5 md:mb-12;
+}
+
+.contact-title {
+  @apply font-semibold tracking-wider md:text-3xl;
+}
+
+.contact-num {
+  @apply md:text-lg;
+}
+
+/* section footer ---------------------------------------------------------------------------------------- */
+/* Card carousel */
+
+.footer-link {
+  @apply mb-10;
+}
+
+.footer-link > li {
+  @apply text-lg mb-2;
+}
+
+.socials {
+  @apply mb-3;
+}
+
+.socials i {
+  @apply text-2xl mx-2;
+}
+
+.footer-bottom {
+  @apply flex flex-col justify-center items-center;
+}
+
 /* note for future me:
-#nav
-1. fix the client login button (js)
-
-#section paket
-1. build html
-2. css styling
-
-#section fiture
-1. rapihin layout (done)
-2. bikin javascript event (done)
-3. tes di actual mobile device (done)
 
 */

@@ -531,10 +531,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
-.-z-10{
-  z-index: -10;
-}
-
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -550,6 +546,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .ml-5{
   margin-left: 1.25rem;
 }
@@ -560,6 +561,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-12{
   margin-top: 3rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .-mt-16{
@@ -586,10 +591,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 100px;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
 .mt-20{
   margin-top: 5rem;
 }
@@ -600,6 +601,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-4{
   margin-left: 1rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .block{
@@ -624,10 +637,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[60px\]{
   height: 60px;
-}
-
-.h-\[1000px\]{
-  height: 1000px;
 }
 
 .max-h-fit{
@@ -662,6 +671,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .basis-4\/12{
   flex-basis: 33.333333%;
+}
+
+.basis-1\/3{
+  flex-basis: 33.333333%;
+}
+
+.basis-2\/3{
+  flex-basis: 66.666667%;
 }
 
 .translate-x-10{
@@ -717,6 +734,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -737,25 +758,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-center{
   justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .gap-4{
   gap: 1rem;
 }
 
+.gap-36{
+  gap: 9rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
-}
-
-.border-2{
-  border-width: 2px;
-}
-
-.border-gray-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .bg-body{
@@ -775,6 +799,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-8{
   padding: 2rem;
+}
+
+.p-10{
+  padding: 2.5rem;
 }
 
 .px-5{
@@ -805,6 +833,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pl-5{
@@ -866,6 +909,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -882,12 +935,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.font-normal{
+  font-weight: 400;
+}
+
 .leading-none{
   line-height: 1;
 }
 
 .tracking-wide{
   letter-spacing: 0.025em;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
 }
 
 .text-white{
@@ -1221,12 +1282,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .p-heading{
-  margin-top: -3rem;
+  margin-top: -2.5rem;
   margin-left: 0.5rem;
-  width: 50%;
+  width: 60%;
   font-size: 1rem;
   line-height: 1.5rem;
   line-height: 1;
+}
+
+@media (min-width: 1024px){
+  .p-heading{
+    margin-top: -3.5rem;
+  }
+
+  .p-heading{
+    width: 30%;
+  }
 }
 
 @media (min-width: 1280px){
@@ -1744,8 +1815,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-/* mobilexl:h-[259px] tablet:h-[300px] h-[300px] */
-
 .paket-content{
   display: flex;
   flex-direction: column;
@@ -1765,8 +1834,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 35%;
   }
 }
-
-/* pl-11 xl:pl-14 pr-[50%] md:pr-[30%] */
 
 .paket-title{
   margin-bottom: 0.5rem;
@@ -1902,10 +1969,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-/* absolute -bottom-0 right-0 w-[40%] xl:w-[30%] */
-
-/* mobile:w-[90%] mobilexl:w-[60%] mobilexl:-mb-20 mobile:-mb-[6.5rem] lg:-mb-16 mobilexl:mr-5 */
-
 .paket-bottom{
   display: flex;
   min-height: 60%;
@@ -1924,8 +1987,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 2rem;
   }
 }
-
-/* mobilexl:h-[287px] tablet:h-[350px] */
 
 .paket-ul{
   margin-left: 1.5rem;
@@ -2023,18 +2084,216 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+/* section daftar ---------------------------------------------------------------------------------------- */
+
+/* Card carousel */
+
+.daftar-parent{
+  width: 100%;
+}
+
+@media (min-width: 1024px){
+  .daftar-parent{
+    display: flex;
+  }
+
+  .daftar-parent{
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+}
+
+.daftar-parent > .daftar:nth-child(odd){
+  flex-direction: row;
+}
+
+@media (min-width: 1024px){
+  .daftar-parent > .daftar:nth-child(odd){
+    flex-direction: column;
+  }
+}
+
+.daftar-parent > .daftar:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 1024px){
+  .daftar-parent > .daftar:nth-child(even){
+    flex-direction: column;
+  }
+}
+
+.daftar{
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: 1024px){
+  .daftar{
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1280px){
+  .daftar{
+    margin-bottom: 0px;
+  }
+}
+
+.daftar-content{
+  position: relative;
+  display: flex;
+}
+
+.daftar-num{
+  position: absolute;
+  display: grid;
+  aspect-ratio: 1 / 1;
+  width: 30px;
+  place-items: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .daftar-num{
+    width: 20px;
+  }
+
+  .daftar-num{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.daftar-text{
+  padding-left: 15%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 1024px){
+  .daftar-text{
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 1280px){
+  .daftar-text{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+.daftar-img{
+  width: 30%;
+}
+
+@media (min-width: 1024px){
+  .daftar-img{
+    margin-bottom: 1.25rem;
+  }
+
+  .daftar-img{
+    width: 45%;
+  }
+}
+
+/* section contact ---------------------------------------------------------------------------------------- */
+
+/* Card carousel */
+
+.contact-img{
+  width: 50%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px){
+  .contact-img{
+    width: 40%;
+  }
+}
+
+@media (min-width: 1280px){
+  .contact-img{
+    width: 30%;
+  }
+}
+
+@media (min-width: 1536px){
+  .contact-img{
+    width: 100px;
+  }
+}
+
+.contact-content{
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px){
+  .contact-content{
+    margin-bottom: 3rem;
+  }
+}
+
+.contact-title{
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px){
+  .contact-title{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .contact-num{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* section footer ---------------------------------------------------------------------------------------- */
+
+/* Card carousel */
+
+.footer-link{
+  margin-bottom: 2.5rem;
+}
+
+.footer-link > li{
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.socials{
+  margin-bottom: 0.75rem;
+}
+
+.socials i{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.footer-bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* note for future me:
-#nav
-1. fix the client login button (js)
-
-#section paket
-1. build html
-2. css styling
-
-#section fiture
-1. rapihin layout (done)
-2. bikin javascript event (done)
-3. tes di actual mobile device (done)
 
 */
 
@@ -2136,6 +2395,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 2rem;
   }
 
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2153,12 +2417,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
-  .lg\:mt-32{
-    margin-top: 8rem;
+  .lg\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .lg\:pl-32{
+    padding-left: 8rem;
   }
 }
 
 @media (min-width: 1280px){
+  .xl\:mb-32{
+    margin-bottom: 8rem;
+  }
+
   .xl\:-mt-24{
     margin-top: -6rem;
   }
