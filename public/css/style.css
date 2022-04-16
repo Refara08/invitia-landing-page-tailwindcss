@@ -909,6 +909,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0;
 }
 
+.drop-shadow-\[0_10px_100px_rgba\(241\2c 128\2c 128\2c 0\.5\)\]{
+  --tw-drop-shadow: drop-shadow(0 10px 100px rgba(241,128,128,0.5));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition{
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1675,6 +1680,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+/* individual filter */
+
+.filter-countdown {
+  filter: drop-shadow(0px 10px 100px rgba(241, 128, 128, 0.5));
+}
+
 /* section paket ---------------------------------------------------------------------------------------- */
 
 /* Card carousel */
@@ -1706,6 +1717,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (max-width: 639px){
+  .paket{
+    aspect-ratio: 6 / 10;
+  }
+}
+
 .paket-top{
   position: relative;
   display: flex;
@@ -1715,7 +1732,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(238 238 238 / var(--tw-bg-opacity));
-  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 768px){
+  .paket-top{
+    padding: 1rem;
+  }
 }
 
 /* mobilexl:h-[259px] tablet:h-[300px] h-[300px] */
@@ -1744,8 +1770,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .paket-title{
   margin-bottom: 0.5rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 @media (min-width: 768px){
@@ -1796,22 +1822,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (max-width: 1023px){
+@media (min-width: 640px){
   .harga-now{
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
 
-@media (max-width: 767px){
+@media (min-width: 768px){
   .harga-now{
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -1820,6 +1846,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
   bottom: -2%;
   right: 0;
+  z-index: 10;
   width: 40%;
 }
 
@@ -1832,7 +1859,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .paket-diskon{
   position: absolute;
   top: -4%;
-  right: -12%;
+  right: -13%;
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
@@ -1886,19 +1913,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-  padding: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+  .paket-bottom{
+    padding: 2rem;
+  }
 }
 
 /* mobilexl:h-[287px] tablet:h-[350px] */
 
 .paket-ul{
   margin-left: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
   list-style-type: disc;
 }
 
+@media (min-width: 768px){
+  .paket-ul{
+    margin-bottom: 2.5rem;
+  }
+}
+
 .paket-ul > li{
-  margin-bottom: 0.75rem;
+  margin-bottom: 1px;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -1932,6 +1974,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .paket-btn{
   width: 100%;
+  border-width: 2px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
@@ -1944,6 +1987,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: inline-block;
   cursor: pointer;
   border-radius: 9999px;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.paket-btn:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
@@ -2178,8 +2236,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 639px){
-  .mobile\:w-\[220\%\]{
-    width: 220%;
+  .mobile\:w-\[230\%\]{
+    width: 230%;
   }
 
   .mobile\:w-\[270\%\]{
