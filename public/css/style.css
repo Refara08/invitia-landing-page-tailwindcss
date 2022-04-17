@@ -966,7 +966,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 1536px){
   .container-me{
-    max-width: 1500px;
+    max-width: 1300px;
   }
 }
 
@@ -983,7 +983,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 1536px){
   .container-me-scrollable{
-    max-width: 1500px;
+    max-width: 1300px;
   }
 }
 

@@ -7,11 +7,11 @@
 @tailwind utilities;
 
 .container-me {
-  @apply tw-max-w-full md:tw-mx-auto md:tw-max-w-[90vw] xl:tw-max-w-[80vw] 2xl:tw-max-w-[1500px];
+  @apply tw-max-w-full md:tw-mx-auto md:tw-max-w-[90vw] xl:tw-max-w-[80vw] 2xl:tw-max-w-[1300px];
 }
 
 .container-me-scrollable {
-  @apply xl:tw-mx-auto xl:tw-max-w-[80vw] 2xl:tw-max-w-[1500px];
+  @apply xl:tw-mx-auto xl:tw-max-w-[80vw] 2xl:tw-max-w-[1300px];
 }
 
 /* homepage --------------------------------------------------------------------------- */
