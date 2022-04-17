@@ -12,25 +12,25 @@ const cardParent = document.querySelector("#card-parent");
 // ### Functions ### =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=--=-=-=-=-=-=--=-=-=-=-=--=-=-=-=-=-=-=--
 const navBlack = () => {
   // nav
-  nav.classList.remove("bg-body");
-  nav.classList.add("bg-black");
+  nav.classList.remove("tw-bg-body");
+  nav.classList.add("tw-bg-black");
 
   // logo remove attr from unused link
   logoTextLeft.setAttribute("href", "#");
   logoTextRight.removeAttribute("href");
   // logo transition
-  logoTextLeft.classList.remove("translate-x-10");
-  logoTextRight.classList.remove("-translate-x-0");
-  logoTextLeft.classList.add("translate-x-0");
-  logoTextRight.classList.add("-translate-x-10");
+  logoTextLeft.classList.remove("tw-translate-x-10");
+  logoTextRight.classList.remove("-tw-translate-x-0");
+  logoTextLeft.classList.add("tw-translate-x-0");
+  logoTextRight.classList.add("-tw-translate-x-10");
 
   // transisi warna untuk logo dan nav desktop
   if (window.innerWidth > 768) {
-    logoTextLeft.classList.remove("md:text-black");
+    logoTextLeft.classList.remove("md:tw-text-black");
   }
 
   // nav desktop
-  desktopMenu.classList.add("text-white");
+  desktopMenu.classList.add("tw-text-white");
 
   // sign in desktop
   signInDesktop.classList.remove("sign-in-desktop");
@@ -39,26 +39,26 @@ const navBlack = () => {
 
 const navWhite = () => {
   // nav
-  nav.classList.remove("bg-black");
-  nav.classList.add("bg-body");
+  nav.classList.remove("tw-bg-black");
+  nav.classList.add("tw-bg-body");
 
   // logo remove attr
   logoTextRight.setAttribute("href", "#");
   logoTextLeft.removeAttribute("href");
 
   // logo transition
-  logoTextLeft.classList.remove("translate-x-0");
-  logoTextLeft.classList.add("translate-x-10");
-  logoTextRight.classList.remove("-translate-x-10");
-  logoTextRight.classList.add("-translate-x-0");
+  logoTextLeft.classList.remove("tw-translate-x-0");
+  logoTextLeft.classList.add("tw-translate-x-10");
+  logoTextRight.classList.remove("-tw-translate-x-10");
+  logoTextRight.classList.add("-tw-translate-x-0");
 
   // transisi warna untuk logo desktop
   if (window.innerWidth > 768) {
-    logoTextLeft.classList.add("md:text-black");
+    logoTextLeft.classList.add("md:tw-text-black");
   }
 
   //nav desktop
-  desktopMenu.classList.remove("text-white");
+  desktopMenu.classList.remove("tw-text-white");
 
   // sign in desktop
   signInDesktop.classList.remove("sign-in-desktop-scroll");
@@ -67,16 +67,16 @@ const navWhite = () => {
 
 const mobileActive = () => {
   // mobile menu transition
-  mobileMenu.classList.remove("opacity-0");
-  mobileMenu.classList.remove("-translate-y-5");
-  mobileMenu.classList.add("-translate-y-0");
+  mobileMenu.classList.remove("tw-opacity-0");
+  mobileMenu.classList.remove("-tw-translate-y-5");
+  mobileMenu.classList.add("-tw-translate-y-0");
 };
 
 const mobileDeactive = () => {
   // mobile menu transition
-  mobileMenu.classList.remove("-translate-y-0");
-  mobileMenu.classList.add("-translate-y-5");
-  mobileMenu.classList.add("opacity-0");
+  mobileMenu.classList.remove("-tw-translate-y-0");
+  mobileMenu.classList.add("-tw-translate-y-5");
+  mobileMenu.classList.add("tw-opacity-0");
 };
 
 // ## card fitur algorithm ##
@@ -141,8 +141,8 @@ const clickCardFiturAuto = (currCardIndex) => {
 burger.addEventListener("click", () => {
   console.log("hello");
   // BUKA burger menu -------------------------------------------------------//
-  if (mobileMenu.classList.contains("hidden")) {
-    mobileMenu.classList.remove("hidden");
+  if (mobileMenu.classList.contains("tw-hidden")) {
+    mobileMenu.classList.remove("tw-hidden");
 
     setTimeout(() => {
       navBlack();
@@ -177,7 +177,7 @@ burger.addEventListener("click", () => {
 
     setTimeout(() => {
       // mobile menu display none
-      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.add("tw-hidden");
     }, 200);
   }
 });
@@ -190,20 +190,20 @@ document.addEventListener("scroll", () => {
     navBlack();
 
     Array.from(burgerLineArr).forEach((line) => {
-      line.classList.remove("bg-black");
-      line.classList.add("bg-white");
+      line.classList.remove("tw-bg-black");
+      line.classList.add("tw-bg-white");
     });
   } else {
     // console.log("putih");
     navWhite();
     Array.from(burgerLineArr).forEach((line) => {
-      line.classList.remove("bg-white");
-      line.classList.add("bg-black");
+      line.classList.remove("tw-bg-white");
+      line.classList.add("tw-bg-black");
     });
   }
 
   // ## close mobile nav ketika scroll ##
-  if (!mobileMenu.classList.contains("hidden")) {
+  if (!mobileMenu.classList.contains("tw-hidden")) {
     console.log("hubahubahuba");
     setTimeout(() => {
       mobileDeactive();
@@ -217,7 +217,7 @@ document.addEventListener("scroll", () => {
 
     setTimeout(() => {
       // mobile menu display none
-      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.add("tw-hidden");
     }, 200);
   }
 });
