@@ -156,7 +156,7 @@
 }
 
 .card-text {
-  @apply tw-hidden lg:tw-block tw-text-xs md:tw-text-sm lg:tw-leading-5 tw-pr-[30%] lg:tw-pr-[40%];
+  @apply tw-hidden lg:tw-block tw-text-xs md:tw-text-sm lg:tw-leading-5 tw-pr-[30%] lg:tw-pr-[43%];
 }
 
 .card-img {
