@@ -923,16 +923,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(224 224 224 / var(--tw-text-opacity));
 }
 
-.tw-text-red-300{
-  --tw-text-opacity: 1;
-  color: rgb(252 165 165 / var(--tw-text-opacity));
-}
-
-.tw-text-red-500{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
 .tw-opacity-0{
   opacity: 0;
 }
@@ -993,6 +983,33 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 1536px){
   .container-me-scrollable{
+    max-width: 1300px;
+  }
+}
+
+.container-me-nav{
+  max-width: 100%;
+}
+
+@media (min-width: 1024px){
+  .container-me-nav{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-me-nav{
+    max-width: 90vw;
+  }
+}
+
+@media (min-width: 1280px){
+  .container-me-nav{
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 1536px){
+  .container-me-nav{
     max-width: 1300px;
   }
 }
@@ -1478,11 +1495,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .card-text{
-    padding-right: 43%;
+    padding-right: 40%;
   }
 
   .card-text{
     line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .card-text{
+    padding-right: 43%;
   }
 }
 

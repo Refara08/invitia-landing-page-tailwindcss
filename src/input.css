@@ -14,6 +14,10 @@
   @apply xl:tw-mx-auto xl:tw-max-w-[80vw] 2xl:tw-max-w-[1300px];
 }
 
+.container-me-nav {
+  @apply tw-max-w-full lg:tw-mx-auto lg:tw-max-w-[90vw] xl:tw-max-w-[80vw] 2xl:tw-max-w-[1300px];
+}
+
 /* homepage --------------------------------------------------------------------------- */
 .sign-in-desktop {
   @apply tw-bg-black tw-text-white tw-border-2 tw-border-white hover:tw-bg-white hover:tw-text-black hover:tw-border-black;
@@ -156,7 +160,7 @@
 }
 
 .card-text {
-  @apply tw-hidden lg:tw-block tw-text-xs md:tw-text-sm lg:tw-leading-5 tw-pr-[30%] lg:tw-pr-[43%];
+  @apply tw-hidden lg:tw-block tw-text-xs md:tw-text-sm lg:tw-leading-5 tw-pr-[30%] lg:tw-pr-[40%] xl:tw-pr-[43%];
 }
 
 .card-img {
